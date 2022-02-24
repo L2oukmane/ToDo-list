@@ -1,7 +1,7 @@
 {
   "name": "toDo-list",
   "version": "1.0.0",
-  "description": "",
+  "description": "> This simple project being built in our second module of our curriculum at microverse. its a is To Do List were you are able to add and remove a note from a list",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -36,5 +36,6 @@
   },
   "dependencies": {
     "lodash": "^4.17.21"
-  }
+  },
+  "main": "webpack.config.js"
 }
