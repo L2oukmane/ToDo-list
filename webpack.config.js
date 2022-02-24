@@ -5,33 +5,30 @@ module.exports = {
   mode: 'development',
   entry: './src/index.js',
   plugins: [
-
     new HtmlWebpackPlugin({
-
-      title: 'Output Management',
-
+      template: './src/index.html',
     }),
-
   ],
+
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
 
-module: {
+  module: {
 
-	rules: [
+    rules: [
 
-	{
+      {
 
-		test: /\.css$/i,
+        test: /\.css$/i,
 
-		use: ['style-loader', 'css-loader'],
+        use: ['style-loader', 'css-loader'],
 
-	},
+      },
 
-],
+    ],
 
-},
+  },
 };

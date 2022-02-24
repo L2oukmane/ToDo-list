@@ -1,52 +1,37 @@
+/* eslint-disable */
 import _ from 'lodash';
+/* eslint-enable */
 import './style.css';
 
-const lists = [
+const todoList = document.querySelector('.items');
+const todos = [
   {
-    description:'Clean the room',
-    completed : false,
-    index: 1
+    description: 'Take a walk ',
+    completed: false,
+    index: 2,
   },
   {
-    description:'Clean the room',
-    completed : false,
-    index: 2
+    description: 'Read a book',
+    completed: false,
+    index: 1,
   },
   {
-    description:'Clean the room',
-    completed : false,
-    index: 3
-  }
+    description: 'Wash the car',
+    completed: false,
+    index: 0,
+  },
 ];
 
-function createList(lists) {
-
-  const container = document.querySelector('.toDo-container');
-  lists.froEach((list) => {
-  container.innerHTML =`<div class="toDo">
-  <div class="heading">
-	<h1>Today's To Do</h1>
-	<i class="material-icons loop">loop</i>
-</div>
-<hr class="breakline">
-	<ul class="listForm">
-		<li class="input-container">
-			<input class="input" type ="input" placeholder="Add to your list...">
-			<i class="material-icons Enter">keyboard_return</i>
-		</li>
-		<hr class="breakline">
-		<li class="items"> 
-    	<div class="item">
-				<i class="fa-regular fa-square"></i>
-		      ${list.description}
-				<i class="material-icons threePoints">more_horiz</i>
-			</div>
-		</li>
-		<hr class="breakline">
-	</ul>
-	<div class="clear-btn">Clear all completed</div>
-  </div>`
+function allTasks() {
+  todoList.innerHTML = '';
+  todos.forEach((todos) => {
+    todoList.innerHTML += `<div class="item ${todos.index}">
+    <i class="fa-regular fa-square"></i>
+    ${todos.description}
+    <i class="material-icons threePoints">more_horiz</i>
+    </div>
+    <div class="breakline"><hr></div>
+  `;
+  });
 }
-  )};
- 
-  document.body.appendChild(createList());
+window.onload = allTasks();
