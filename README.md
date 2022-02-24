@@ -1,4 +1,4 @@
-# AWESOME-BOOKS | MODULE-II
+# To Do List| MODULE-II
 
 > This simple project being built in our second module of our curriculum at microverse. its a is To Do List were you are able to add and remove a note from a list
 
@@ -36,6 +36,36 @@ The basic requirements for building the executable are:
 
 ```
 git clone  https://github.com/L2oukmane/ToDo-list <Your-Build-Directory>
+```
+
+## Getting packages and dependencies
+
+To get all package modules required to build the project run:
+
+```
+npm install
+```
+
+every package module required to build the project is listed in the package.json file. this is used as a reference to get all dependencies.
+
+## Building the project
+
+```
+npm run build
+```
+
+## Running
+
+To run the program on a browser through a server run this command in your cli
+
+```
+npm start
+```
+
+## Unit-Testing
+
+```
+npm run test
 ```
 
 ## Getting packages and debuging with Stylelint

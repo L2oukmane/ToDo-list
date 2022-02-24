@@ -1,6 +1,3 @@
-/* eslint-disable */
-import _ from 'lodash';
-/* eslint-enable */
 import './style.css';
 
 const todoList = document.querySelector('.items');
@@ -8,7 +5,7 @@ const todos = [
   {
     description: 'Take a walk ',
     completed: false,
-    index: 2,
+    index: 0,
   },
   {
     description: 'Read a book',
@@ -18,7 +15,7 @@ const todos = [
   {
     description: 'Wash the car',
     completed: false,
-    index: 0,
+    index: 2,
   },
 ];
 
